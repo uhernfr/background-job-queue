@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "biPcDCXfIM3edEezTyWrOH0McNOti3+LStA/b/hYr3Q=",
+  "Source": "background-job-queue",
+  "BasePath": "_content/background-job-queue",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

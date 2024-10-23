@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\background-job-queue.props" />
+</Project>
