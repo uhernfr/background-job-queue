@@ -2778,11 +2778,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\2024\\exemplos\\background-job-queue\\background-job-queue.csproj",
+      "projectUniqueName": "C:\\Projects\\2024\\exemplos\\background-job-queue\\background-job-queue\\background-job-queue.csproj",
       "projectName": "background-job-queue",
-      "projectPath": "C:\\Projects\\2024\\exemplos\\background-job-queue\\background-job-queue.csproj",
+      "projectPath": "C:\\Projects\\2024\\exemplos\\background-job-queue\\background-job-queue\\background-job-queue.csproj",
       "packagesPath": "C:\\Users\\uhern\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\2024\\exemplos\\background-job-queue\\obj\\",
+      "outputPath": "C:\\Projects\\2024\\exemplos\\background-job-queue\\background-job-queue\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

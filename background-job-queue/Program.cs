@@ -38,9 +38,7 @@ namespace background_job_queue
       builder.Services.AddSignalR();
 
       var app = builder.Build();
-      app.MapHub<ExcelNotificationHub>("/excelNotificationHub");
-
-    
+      app.MapHub<ExcelNotificationHub>("/excelNotificationHub");   
 
 
       // Configure the HTTP request pipeline.

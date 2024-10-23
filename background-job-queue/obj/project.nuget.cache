@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZknE+dtKrRVjUBWMP276imepZ5M+d9nWMPwfihOnnOsCqORoRoaDHNPDRinat0hCweSPFIaRTyFrBChKC2VlwA==",
+  "dgSpecHash": "ii6kcYPJXnyHHZESIUobPsUx7Bnr6wvq0Fml5sD94oy9qdFiDr3wpllPvljp4dUAI16hszYbOuPiN2RyuExDXA==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\2024\\exemplos\\background-job-queue\\background-job-queue.csproj",
+  "projectFilePath": "C:\\Projects\\2024\\exemplos\\background-job-queue\\background-job-queue\\background-job-queue.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\uhern\\.nuget\\packages\\closedxml\\0.104.1\\closedxml.0.104.1.nupkg.sha512",
     "C:\\Users\\uhern\\.nuget\\packages\\closedxml.parser\\1.2.0\\closedxml.parser.1.2.0.nupkg.sha512",

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\2024\\exemplos\\teste-background-job-web\\background-job-queue-web.csproj",
+      "projectUniqueName": "C:\\Projects\\2024\\exemplos\\background-job-queue\\background-job-web\\background-job-queue-web.csproj",
       "projectName": "background-job-queue-web",
-      "projectPath": "C:\\Projects\\2024\\exemplos\\teste-background-job-web\\background-job-queue-web.csproj",
+      "projectPath": "C:\\Projects\\2024\\exemplos\\background-job-queue\\background-job-web\\background-job-queue-web.csproj",
       "packagesPath": "C:\\Users\\uhern\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\2024\\exemplos\\teste-background-job-web\\obj\\",
+      "outputPath": "C:\\Projects\\2024\\exemplos\\background-job-queue\\background-job-web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
