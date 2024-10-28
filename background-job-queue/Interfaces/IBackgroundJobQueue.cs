@@ -6,8 +6,6 @@ namespace background_job_queue.Interfaces
   {
     void QueueBackgroundWorkItem(Func<CancellationToken, Task> workItem);
     Task<Func<CancellationToken, Task>> DequeueAsync(CancellationToken cancellationToken);
-
-
   }
 
   public class BackgroundJobQueue : IBackgroundJobQueue

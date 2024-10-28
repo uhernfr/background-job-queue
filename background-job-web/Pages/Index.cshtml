@@ -5,44 +5,44 @@
 }
 
 <div class="text-center">
-     <h1>Gerar Arquivo Excel</h1>
+    <h1>Generate Excel File</h1>
 
-    <button id="gerarExcelBtn">Gerar Excel</button>
+    <button id="btnGenerateFile">Generate File</button>
 
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.12/signalr.min.js"></script>
 <script>
-        // Conectar ao SignalR Hub para receber notificações de quando o arquivo estiver pronto
+    // Connect to SignalR Hub to receive notifications when the file is ready
         const connection = new signalR.HubConnectionBuilder()
-            .withUrl("http://localhost:5054/excelNotificationHub") // URL do SignalR Hub
-            .configureLogging(signalR.LogLevel.Information) // Para facilitar o debug
+        .withUrl("http://localhost:5054/excelNotificationHub") // SignalR Hub URL
+        .configureLogging(signalR.LogLevel.Information) // To facilitate debugging
             .build();
 
-        // Configurar o recebimento da notificação do servidor
+    // Configure receiving notification from the server
         connection.on("ReceiveNotification", (jobId) => {
-            downloadFile(jobId); // Chama o método para baixar o arquivo quando pronto
+        downloadFile(jobId); // Calls the method to download the file when ready
         });
 
         // Inicia a conexão com o SignalR
         connection.start().then(() => {
-            document.getElementById("gerarExcelBtn").addEventListener("click", () => {
-            generateExcel(); // Gera o Excel ao clicar no botão
+            document.getElementById("btnGenerateFile").addEventListener("click", () => {
+            generateExcel(); // Generates Excel on button click
             });
 
             console.log("Conectado ao ExcelNotificationHub!");
-        // Aqui você pode chamar métodos do Hub ou configurar listeners
+        // Here you can call Hub methods or configure listeners
     })
     .catch(err => console.error("Erro ao conectar ao Hub: ", err));
 
 
-        // Função para enviar requisição para gerar o Excel
+    // Function to send request to generate Excel
         async function generateExcel() {
             const response = await fetch('http://localhost:5054/generate', { method: 'POST' });
             const data = await response.json();
             console.log("Excel generation started with jobId: " + data.jobId);
         }
 
-        // Função para baixar o arquivo Excel
+    // Function to download the Excel file
         async function downloadFile(jobId) {
         const downloadResponse = await fetch(`http://localhost:5054/wait-for-file/${jobId}`);
 
@@ -51,12 +51,12 @@
                 const url = window.URL.createObjectURL(blob);
                 const a = document.createElement('a');
                 a.href = url;
-                a.download = 'Relatorio.xlsx'; // Nome do arquivo que será baixado
+                a.download = 'Report.xlsx'; // Name of the file to be downloaded
                 document.body.appendChild(a);
                 a.click();
                 a.remove();
             } else {
-                console.error('Erro ao gerar o arquivo.');
+            console.error('Error generating the file.');
             }
         }
 </script>
